@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="1">
+    <link rel="stylesheet" href="CSS_0005.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title> Heaven Of Dream </title>
+</head>
+<body background="2641052.gif">
+<button class="button" type="button" href="HTML_012.html">HOME</button> 
+<button class="button" type="button" href="HTML_013.html">ABOUT</button> 
+<button class="button" type="button" href="HTML_014.html">CONTACT</button> 
+<button class="button" type="button" href="HTML_015.html"> SERVICE</button> 
+<center>
+<div class="Search-box">
+<input class="Search-txt" type="text" name="" placeholder="Type to Search" >
+<a class="Search-btn" href="#">
+<i class="fas fa-search"></i></a></div>
+<div class="container">
+    <h2 id="current-time"></h2>
+</div>
+<script>
+    let time = document.getElementById("current-time")
+
+    let d =  new Date();
+    time.innerHTML = d.toLocaleTimeString();
+</script>
+  
+</center>
+</body>
+</html>

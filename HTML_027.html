@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <h1><div class="maiDivId" id="maiDivId">
+        <h1 id="heading">Events and handlers</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsam velit sapiente autem beatae. Mollitia, numquam quos. Ex aspernatur sunt corrupti laborum consequuntur voluptatem nulla amet ipsum eveniet, eaque ipsam perferendis sint ducimus sequi magni, voluptate, incidunt voluptatibus quas fugit a? Ipsa at earum delectus, deleniti sequi quis quaerat impedit adipisci iste deserunt necessitatibus, velit suscipit autem odit facere, in non! Aperiam autem iste quidem facere earum aspernatur sit quasi possimus nemo quos, alias a, distinctio beatae architecto quaerat. Corrupti vel eligendi explicabo eos error possimus labore! Mollitia, quo aperiam, iure vero consequatur minima totam rerum, dicta doloribus natus laborum dolore? Accusantium laudantium eos libero ut ea a numquam voluptatem ratione. Maiores quaerat suscipit id sint exercitationem aspernatur inventore at asperiores eum aut, in iure eaque similique veniam qui delectus nihil quam dicta atque voluptatem officiis, minus molestias! Possimus quis maiores aliquid facilis natus quam explicabo excepturi rem amet eligendi odio aperiam ad quaerat minus distinctio, cumque minima voluptates quo aliquam doloremque accusamus dolores sapiente! Voluptates aspernatur fuga, non quae quis ipsam voluptate laborum, ipsa dolore est earum aliquam dicta suscipit dignissimos maxime minus facilis iste excepturi animi quidem itaque ad hic voluptatibus! Reprehenderit accusantium sunt, at veritatis omnis ipsam.</p>
+        <input id = "btn" type = "button" value = "submit">
+        <ul>
+            <li>HOME</li>  
+            <li>ABOUT</li> 
+            <li>NEXTPAGE</li>              
+            <li>SETTING</li>              
+            <li>LOGIN</li>              
+            <li>CONTACT</li>              
+            <li>MORE</li>                        
+        </ul>
+    </div></h1>
+    <script>
+        let paragraph = document.getElementById("para")
+        let heading = document.getElementById("heading")
+        let button = document.getElementById("btn")
+        paragraph.addEventListner('mouseover', function test(){
+            console.log("Mouse is over the paragraph");
+        })
+    //    let main = document.getElementById("mainDivId");
+    //    console.log(main);/
+        // function togglePara(){
+        //     if (paragraph.style.display != "none")
+        //     {
+        //         paragraph.style.display = "none";
+        //     }
+        //     else
+        //     {
+        //         paragraph.style.display = "block";
+        //     }
+        // }
+            button.onclick = function test(){
+            console.log("hello")
+        }
+    </script>
+
+</body>
+</html>

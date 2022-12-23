@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, consequuntur. Temporibus amet repellendus similique possimus dolores, perferendis fuga quasi, ipsum tempora quod, eius voluptas voluptatum modi aliquid tempore pariatur asperiores. Provident dicta perspiciatis molestiae dolores dolorem voluptatem, necessitatibus ipsa, commodi blanditiis temporibus cupiditate consequatur rerum ullam repudiandae deleniti! Sapiente, amet!</p>
+<p id="time">the current time is : <span id="timespan">Current Time</span></p>
+<input type="button" value="submit">
+<body>
+    
+    <script>
+        // calling function starts from here
+        function greet()
+        {
+            console.log("Hello World");
+        }
+        let timeOut = setTimeout(greet,5000)
+        // // calling the function once after given time 
+        // clearTimeout(timeOut)
+        // let interval = setInterval(greet,1000)
+        // clearInterval(interval)
+        function display(){
+            let timeDate = new Date();
+            console.log(timeDate);
+            document.getElementById("timespan").innerHTML = timeDate
+        }
+        setInterval(display,1000)
+    </script>
+</body>
+</html>
